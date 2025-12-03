@@ -4,35 +4,22 @@
     <meta charset="UTF-8">
     <title>Kế hoạch kinh doanh Crypto - Trang giới thiệu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Mô tả SEO chung -->
     <meta name="description" content="Kế hoạch kinh doanh crypto thực chiến: mô hình dịch vụ an toàn, minh bạch, dễ mở rộng — sản phẩm, doanh thu, marketing, tokenomics, lộ trình 1–3 năm.">
-
-    <!-- Open Graph (Facebook, Zalo, v.v.) -->
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kế hoạch kinh doanh Crypto - Trang giới thiệu">
     <meta property="og:description" content="Kế hoạch dịch vụ crypto an toàn & minh bạch: sản phẩm, doanh thu, marketing, tokenomics, lộ trình phát triển 1–3 năm.">
-
-    <!-- URL thật của trang trên GitHub Pages -->
     <meta property="og:url" content="https://hai1110.github.io/gdktpl/">
-
-    <!-- Ảnh hiển thị khi share link -->
     <meta property="og:image" content="https://hai1110.github.io/gdktpl/1.png">
     <meta property="og:image:type" content="image/png">
-    <!-- Nếu không biết chính xác kích thước có thể giữ hoặc xóa 2 dòng dưới -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Kế hoạch kinh doanh Crypto - mô hình dịch vụ an toàn & minh bạch">
     <meta property="og:site_name" content="Kế hoạch Kinh doanh Crypto">
-
-    <!-- Thẻ cho Twitter (X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kế hoạch kinh doanh Crypto - Trang giới thiệu">
     <meta name="twitter:description" content="Kế hoạch dịch vụ crypto an toàn & minh bạch: sản phẩm, doanh thu, marketing, tokenomics, lộ trình phát triển 1–3 năm.">
     <meta name="twitter:image" content="https://hai1110.github.io/gdktpl/1.png">
-
-    <!-- Favicon (icon trên tab) -->
     <link rel="icon" type="image/png" href="3.png">
     <style>
         :root {
@@ -87,8 +74,6 @@
                 padding: 60px 0;
             }
         }
-
-        /* ===== MOBILE MENU ===== */
         .mobile-menu {
             display: none !important;
         }
@@ -155,8 +140,6 @@
                 display: none !important;
             }
         }
-
-        /* ===== LIGHTBOX ===== */
         .lightbox {
             display: none;
             position: fixed;
@@ -199,8 +182,6 @@
             box-shadow: 0 0 50px rgba(0, 194, 255, 0.3);
             background: #000;
         }
-
-        /* Nút thoát ở TRÊN, không đè lên video */
         .lightbox-close {
             position: absolute;
             top: -50px;
@@ -257,8 +238,6 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0, 194, 255, 0.4);
         }
-
-        /* ===== HEADER / NAV ===== */
         header {
             position: sticky;
             top: 0;
@@ -445,8 +424,6 @@
                 gap: 10px;
             }
         }
-
-        /* ===== HERO ===== */
         #hero {
             padding-top: 40px;
             padding-bottom: 90px;
@@ -710,8 +687,6 @@
                 padding-top: 26px;
             }
         }
-
-        /* ===== SECTION HEADER ===== */
         .section-header {
             margin-bottom: 26px;
         }
@@ -734,8 +709,6 @@
             font-size: 14px;
             color: var(--muted);
         }
-
-        /* ===== ABOUT ===== */
         #about .content-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
@@ -794,7 +767,6 @@
             margin-bottom: 4px;
         }
 
-        /* ===== PLAN ===== */
         #plan .plan-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0,1fr));
@@ -837,7 +809,6 @@
             color: var(--muted);
         }
 
-        /* ===== TOKENOMICS ===== */
         .tokenomics-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
@@ -898,7 +869,6 @@
             margin-right: 4px;
         }
 
-        /* ===== ROADMAP ===== */
         .roadmap {
             border-radius: 16px;
             border: 1px solid rgba(255,255,255,0.08);
@@ -952,7 +922,6 @@
             margin-bottom: 3px;
         }
 
-        /* ===== TEAM ===== */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0,1fr));
@@ -997,7 +966,6 @@
             gap: 8px;
         }
 
-        /* ===== FAQ ===== */
         .faq-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
@@ -1042,7 +1010,6 @@
             display: block;
         }
 
-        /* ===== CONTACT ===== */
         .contact-grid {
             display: grid;
             grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr);
@@ -1145,11 +1112,8 @@
     </style>
 </head>
 <body>
-
-<!-- ===== LIGHTBOX (VIDEO) ===== -->
 <div class="lightbox" id="lightbox">
     <div class="lightbox-content">
-        <!-- Nút thoát ở trên, không đè video -->
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
 
         <video id="lightbox-video" controls preload="metadata">
@@ -1190,8 +1154,6 @@
             <span></span><span></span><span></span>
         </div>
     </div>
-
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#about">Tổng quan</a>
         <a href="#plan">Kế hoạch</a>
@@ -1975,4 +1937,5 @@
 </script>
 
 </body>
+
 </html>
