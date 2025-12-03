@@ -5,6 +5,35 @@
     <title>Kế hoạch kinh doanh Crypto - Trang giới thiệu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Mô tả SEO chung -->
+    <meta name="description" content="Kế hoạch kinh doanh crypto thực chiến: mô hình dịch vụ an toàn, minh bạch, dễ mở rộng — sản phẩm, doanh thu, marketing, tokenomics, lộ trình 1–3 năm.">
+
+    <!-- Open Graph (Facebook, Zalo, v.v.) -->
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kế hoạch kinh doanh Crypto - Trang giới thiệu">
+    <meta property="og:description" content="Kế hoạch dịch vụ crypto an toàn & minh bạch: sản phẩm, doanh thu, marketing, tokenomics, lộ trình phát triển 1–3 năm.">
+
+    <!-- URL thật của trang trên GitHub Pages -->
+    <meta property="og:url" content="https://hai1110.github.io/gdktpl/">
+
+    <!-- Ảnh hiển thị khi share link -->
+    <meta property="og:image" content="https://hai1110.github.io/gdktpl/1.png">
+    <meta property="og:image:type" content="image/png">
+    <!-- Nếu không biết chính xác kích thước có thể giữ hoặc xóa 2 dòng dưới -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kế hoạch kinh doanh Crypto - mô hình dịch vụ an toàn & minh bạch">
+    <meta property="og:site_name" content="Kế hoạch Kinh doanh Crypto">
+
+    <!-- Thẻ cho Twitter (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kế hoạch kinh doanh Crypto - Trang giới thiệu">
+    <meta name="twitter:description" content="Kế hoạch dịch vụ crypto an toàn & minh bạch: sản phẩm, doanh thu, marketing, tokenomics, lộ trình phát triển 1–3 năm.">
+    <meta name="twitter:image" content="https://hai1110.github.io/gdktpl/1.png">
+
+    <!-- Favicon (icon trên tab) -->
+    <link rel="icon" type="image/png" href="3.png">
     <style>
         :root {
             --bg: #050816;
@@ -58,76 +87,75 @@
                 padding: 60px 0;
             }
         }
-        /*Mobile Menu ẩn*/
-        /* ===== MOBILE MENU - Mặc định ẩn trên Desktop ===== */
-.mobile-menu {
-    display: none !important;
-}
 
-.menu-toggle {
-    display: none;
-}
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+            display: none !important;
+        }
 
-/* Chỉ hiện trên Mobile (màn hình nhỏ hơn 860px) */
-@media (max-width: 860px) {
-    .nav-links,
-    .nav-cta {
-        display: none;
-    }
+        .menu-toggle {
+            display: none;
+        }
 
-    .menu-toggle {
-        display: flex;
-    }
+        @media (max-width: 860px) {
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
 
-    .mobile-menu {
-        position: fixed;
-        top: 58px;
-        left: 0;
-        right: 0;
-        background: rgba(5,8,22,0.98);
-        border-bottom: 1px solid rgba(255,255,255,0.07);
-        padding: 12px 0 18px;
-        display: none !important;
-        flex-direction: column;
-        gap: 6px;
-        z-index: 30;
-    }
+            .menu-toggle {
+                display: flex;
+            }
 
-    .mobile-menu.open {
-        display: flex !important;
-    }
+            .mobile-menu {
+                position: fixed;
+                top: 58px;
+                left: 0;
+                right: 0;
+                background: rgba(5,8,22,0.98);
+                border-bottom: 1px solid rgba(255,255,255,0.07);
+                padding: 12px 0 18px;
+                display: none !important;
+                flex-direction: column;
+                gap: 6px;
+                z-index: 30;
+            }
 
-    .mobile-menu a {
-        padding: 8px 16px;
-        font-size: 14px;
-        color: var(--muted);
-    }
+            .mobile-menu.open {
+                display: flex !important;
+            }
 
-    .mobile-menu a:hover {
-        color: var(--text);
-        background: rgba(255,255,255,0.02);
-    }
+            .mobile-menu a {
+                padding: 8px 16px;
+                font-size: 14px;
+                color: var(--muted);
+            }
 
-    .mobile-menu .mobile-cta {
-        padding: 10px 16px 2px;
-        display: flex;
-        gap: 10px;
-    }
-}
+            .mobile-menu a:hover {
+                color: var(--text);
+                background: rgba(255,255,255,0.02);
+            }
 
-/* Đảm bảo ẩn hoàn toàn trên Desktop (màn hình lớn hơn 860px) */
-@media (min-width: 861px) {
-    .mobile-menu {
-        display: none !important;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
+            .mobile-menu .mobile-cta {
+                padding: 10px 16px 2px;
+                display: flex;
+                gap: 10px;
+            }
+        }
 
-    .menu-toggle {
-        display: none !important;
-    }
-}
+        @media (min-width: 861px) {
+            .mobile-menu {
+                display: none !important;
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .menu-toggle {
+                display: none !important;
+            }
+        }
+
         /* ===== LIGHTBOX ===== */
         .lightbox {
             display: none;
@@ -164,13 +192,15 @@
             to { transform: scale(1); opacity: 1; }
         }
 
-        .lightbox-content img {
+        .lightbox-content video {
             max-width: 100%;
             max-height: 85vh;
             border-radius: 12px;
             box-shadow: 0 0 50px rgba(0, 194, 255, 0.3);
+            background: #000;
         }
 
+        /* Nút thoát ở TRÊN, không đè lên video */
         .lightbox-close {
             position: absolute;
             top: -50px;
@@ -195,31 +225,6 @@
             background: linear-gradient(135deg, #ff6b8a, #ff4d6a);
         }
 
-        .lightbox-close-corner {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            color: white;
-            transition: all 0.3s ease;
-            z-index: 10000;
-        }
-
-        .lightbox-close-corner:hover {
-            background: rgba(255, 77, 106, 0.8);
-            transform: rotate(90deg);
-        }
-
         .lightbox-hint {
             position: absolute;
             bottom: -40px;
@@ -230,7 +235,7 @@
             white-space: nowrap;
         }
 
-        .lightbox-download {
+        .lightbox-downloa {
             position: absolute;
             bottom: -50px;
             right: 0;
@@ -248,7 +253,7 @@
             text-decoration: none;
         }
 
-        .lightbox-download:hover {
+        .lightbox-downloa:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(0, 194, 255, 0.4);
         }
@@ -1141,14 +1146,18 @@
 </head>
 <body>
 
-<!-- ===== LIGHTBOX ===== -->
+<!-- ===== LIGHTBOX (VIDEO) ===== -->
 <div class="lightbox" id="lightbox">
-    <button class="lightbox-close-corner" onclick="closeLightbox()">&times;</button>
     <div class="lightbox-content">
+        <!-- Nút thoát ở trên, không đè video -->
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <img id="lightbox-img" src="" alt="Whitepaper Preview">
+
+        <video id="lightbox-video" controls preload="metadata">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+
         <p class="lightbox-hint">Nhấn ESC hoặc click bên ngoài để đóng</p>
-        <a href="1.png" download class="lightbox-download">📥 Tải về</a>
+        <a href="https://www.canva.com/design/DAG6L4ot1sE/ggv8JaWLu4QvsVFRlPk50g/edit" download class="lightbox-downloa">📄 Xem file PDF</a>
     </div>
 </div>
 
@@ -1174,7 +1183,7 @@
 
         <div class="nav-cta">
             <a href="#about" class="btn btn-outline btn-sm">Xem kế hoạch chi tiết</a>
-            <a href="javascript:void(0)" onclick="openLightbox('1.png')" class="btn btn-primary btn-sm">📄 Ảnh PDF</a>
+            <a href="javascript:void(0)" onclick="openLightbox('2.mp4')" class="btn btn-primary btn-sm">📺 Video thuyết trình</a>
         </div>
 
         <div class="menu-toggle" id="menuToggle">
@@ -1192,7 +1201,7 @@
         <a href="#contact">Liên hệ</a>
         <div class="mobile-cta">
             <a href="#about" class="btn btn-outline btn-sm">Xem kế hoạch chi tiết</a>
-            <a href="javascript:void(0)" onclick="openLightbox('1.png')" class="btn btn-primary btn-sm">📄 Ảnh PDF</a>
+            <a href="javascript:void(0)" onclick="openLightbox('2.mp4')" class="btn btn-primary btn-sm">📺 Video thuyết trình</a>
         </div>
     </div>
 </header>
@@ -1403,44 +1412,44 @@
                         <p style="margin-top:8px;"><strong>Ví dụ doanh thu 1 tháng (dịch vụ):</strong></p>
                         <table class="token-table" style="font-size:11px;margin-top:4px;">
                             <thead>
-                                <tr>
-                                    <th>Dịch vụ</th>
-                                    <th>Số lượng</th>
-                                    <th>Giá</th>
-                                    <th>Doanh thu</th>
-                                </tr>
+                            <tr>
+                                <th>Dịch vụ</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Doanh thu</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Tạo ví</td>
-                                    <td>20 khách</td>
-                                    <td>150k</td>
-                                    <td>3.000.000</td>
-                                </tr>
-                                <tr>
-                                    <td>Check scam</td>
-                                    <td>10</td>
-                                    <td>200k</td>
-                                    <td>2.000.000</td>
-                                </tr>
-                                <tr>
-                                    <td>Bot tracking</td>
-                                    <td>10</td>
-                                    <td>200k</td>
-                                    <td>2.000.000</td>
-                                </tr>
-                                <tr>
-                                    <td>On/off ramp</td>
-                                    <td>20 giao dịch</td>
-                                    <td>150k/lần</td>
-                                    <td>3.000.000</td>
-                                </tr>
-                                <tr>
-                                    <td>Content TikTok</td>
-                                    <td>quảng cáo nhỏ</td>
-                                    <td>–</td>
-                                    <td>3.000.000–10.000.000</td>
-                                </tr>
+                            <tr>
+                                <td>Tạo ví</td>
+                                <td>20 khách</td>
+                                <td>150k</td>
+                                <td>3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Check scam</td>
+                                <td>10</td>
+                                <td>200k</td>
+                                <td>2.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Bot tracking</td>
+                                <td>10</td>
+                                <td>200k</td>
+                                <td>2.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>On/off ramp</td>
+                                <td>20 giao dịch</td>
+                                <td>150k/lần</td>
+                                <td>3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Content TikTok</td>
+                                <td>quảng cáo nhỏ</td>
+                                <td>–</td>
+                                <td>3.000.000–10.000.000</td>
+                            </tr>
                             </tbody>
                         </table>
                         <p style="margin-top:4px;">
@@ -1534,43 +1543,43 @@
 
                         <table class="token-table" style="margin-top:10px;">
                             <thead>
-                                <tr>
-                                    <th>Hạng mục</th>
-                                    <th>Tỷ lệ</th>
-                                    <th>Ghi chú</th>
-                                </tr>
+                            <tr>
+                                <th>Hạng mục</th>
+                                <th>Tỷ lệ</th>
+                                <th>Ghi chú</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Đội ngũ &amp; cố vấn</td>
-                                    <td>18%</td>
-                                    <td>Vesting 36 tháng, cliff 12 tháng</td>
-                                </tr>
-                                <tr>
-                                    <td>Private Sale</td>
-                                    <td>15%</td>
-                                    <td>Vesting 18-24 tháng</td>
-                                </tr>
-                                <tr>
-                                    <td>Public Sale</td>
-                                    <td>7%</td>
-                                    <td>Unlock 20% TGE, còn lại vesting</td>
-                                </tr>
-                                <tr>
-                                    <td>Thanh khoản &amp; Market Making</td>
-                                    <td>15%</td>
-                                    <td>Khoá / quản trị bởi multisig</td>
-                                </tr>
-                                <tr>
-                                    <td>Phát triển hệ sinh thái</td>
-                                    <td>25%</td>
-                                    <td>Incentive cho người dùng / đối tác</td>
-                                </tr>
-                                <tr>
-                                    <td>Quỹ dự phòng &amp; R&amp;D</td>
-                                    <td>20%</td>
-                                    <td>Dùng cho dài hạn, giải ngân minh bạch</td>
-                                </tr>
+                            <tr>
+                                <td>Đội ngũ &amp; cố vấn</td>
+                                <td>18%</td>
+                                <td>Vesting 36 tháng, cliff 12 tháng</td>
+                            </tr>
+                            <tr>
+                                <td>Private Sale</td>
+                                <td>15%</td>
+                                <td>Vesting 18-24 tháng</td>
+                            </tr>
+                            <tr>
+                                <td>Public Sale</td>
+                                <td>7%</td>
+                                <td>Unlock 20% TGE, còn lại vesting</td>
+                            </tr>
+                            <tr>
+                                <td>Thanh khoản &amp; Market Making</td>
+                                <td>15%</td>
+                                <td>Khoá / quản trị bởi multisig</td>
+                            </tr>
+                            <tr>
+                                <td>Phát triển hệ sinh thái</td>
+                                <td>25%</td>
+                                <td>Incentive cho người dùng / đối tác</td>
+                            </tr>
+                            <tr>
+                                <td>Quỹ dự phòng &amp; R&amp;D</td>
+                                <td>20%</td>
+                                <td>Dùng cho dài hạn, giải ngân minh bạch</td>
+                            </tr>
                             </tbody>
                         </table>
 
@@ -1785,7 +1794,7 @@
                                 </div>
                             </div>
 
-                                                        <div class="faq-item">
+                            <div class="faq-item">
                                 <div class="faq-question">
                                     <span>Làm sao để đánh giá rủi ro trước khi tham gia crypto?</span>
                                     <span>+</span>
@@ -1862,24 +1871,40 @@
 
 <!-- ===== JAVASCRIPT ===== -->
 <script>
-    // ===== LIGHTBOX FUNCTIONS =====
+    // ===== LIGHTBOX FUNCTIONS (VIDEO) =====
     const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxVideo = document.getElementById('lightbox-video');
+    const lightboxDownload = document.querySelector('.lightbox-download');
 
-    // Mở lightbox
+    // Mở lightbox với video
     function openLightbox(src) {
-        lightboxImg.src = src;
+        if (lightboxVideo) {
+            lightboxVideo.src = src;      // đặt file video
+            lightboxVideo.load();         // nạp lại
+            lightboxVideo.play();         // tự chạy (nếu browser cho phép)
+        }
+
+        // Cập nhật link download đúng file
+        if (lightboxDownload) {
+            lightboxDownload.href = src;
+        }
+
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
     // Đóng lightbox
     function closeLightbox() {
+        if (lightboxVideo) {
+            lightboxVideo.pause();         // dừng
+            lightboxVideo.currentTime = 0; // tua về đầu
+        }
+
         lightbox.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
 
-    // Đóng khi click vào overlay (bên ngoài ảnh)
+    // Đóng khi click vào overlay (ngoài khung video)
     lightbox.addEventListener('click', function(e) {
         if (e.target === lightbox) {
             closeLightbox();
